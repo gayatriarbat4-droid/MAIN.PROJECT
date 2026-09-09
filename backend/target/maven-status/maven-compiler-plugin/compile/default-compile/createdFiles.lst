@@ -1,0 +1,7 @@
+com\yourorg\appname\dto\request\ResendVerificationRequest.class
+com\yourorg\appname\dto\request\VerifyEmailRequest$VerifyEmailRequestBuilder.class
+com\yourorg\appname\dto\request\ResendVerificationRequest$ResendVerificationRequestBuilder.class
+com\yourorg\appname\service\EmailService.class
+com\yourorg\appname\service\impl\EmailServiceImpl.class
+com\yourorg\appname\config\DataInitializer.class
+com\yourorg\appname\dto\request\VerifyEmailRequest.class

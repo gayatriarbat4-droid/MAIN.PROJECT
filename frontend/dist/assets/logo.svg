@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <defs>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073B3A"/>
+      <stop offset="100%" stop-color="#0E5E58"/>
+    </linearGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2EC4B6"/>
+      <stop offset="100%" stop-color="#D8F3E5"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="44" height="44" rx="14" fill="url(#medGrad)"/>
+  <path d="M26 18V38M16 28H36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="36" cy="18" r="4" fill="#2EC4B6"/>
+  <path d="M18 34C22 30 30 30 34 34" stroke="#D8F3E5" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="58" y="34" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="22" fill="#073B3A" letter-spacing="-0.5">Medi<tspan fill="#0E5E58">Care</tspan></text>
+  <text x="58" y="46" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9" fill="#102A43" letter-spacing="1.8">HEALTHCARE SYSTEM</text>
+</svg>
