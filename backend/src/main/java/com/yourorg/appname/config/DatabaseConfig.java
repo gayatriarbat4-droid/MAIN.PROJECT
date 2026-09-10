@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 
 import javax.sql.DataSource;
 import java.net.URI;
@@ -21,11 +22,7 @@ import java.net.URI;
  * 3. Active profile is 'postgres'
  */
 @Configuration
-@ConditionalOnExpression(
-    "'${RENDER:#{null}}' != null || " +
-    "'${DATABASE_URL:#{null}}' != null || " +
-    "'${spring.profiles.active:#{null}}' == 'postgres'"
-)
+@Profile("postgres")
 public class DatabaseConfig {
 
     private static final Logger log = LoggerFactory.getLogger(DatabaseConfig.class);
