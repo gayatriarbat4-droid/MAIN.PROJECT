@@ -43,10 +43,10 @@ public class Patient {
     @Column(name = "emergency_contact_phone")
     private String emergencyContactPhone;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String allergies;
 
-    @Column(name = "chronic_conditions", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "chronic_conditions", columnDefinition = "TEXT")
     private String chronicConditions;
 
     @Column(name = "created_at", nullable = false, updatable = false)

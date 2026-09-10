@@ -40,7 +40,7 @@ public class User {
     @Builder.Default
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    @Column(name = "email_verified", nullable = false, columnDefinition = "boolean default false")
+    @Column(name = "email_verified", nullable = false)
     @Builder.Default
     private boolean emailVerified = false;
 

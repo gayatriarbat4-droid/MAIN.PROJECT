@@ -57,10 +57,10 @@ public class Doctor {
     @Column(name = "room_suite")
     private String roomSuite;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String bio;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String education;
 
     @Column(name = "avatar_url")

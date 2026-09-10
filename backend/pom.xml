@@ -49,6 +49,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- PostgreSQL JDBC Driver for Cloud Deployment (Render, AWS RDS, Supabase, Neon) -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- In-Memory H2 Driver for zero-config offline dev fallback -->
         <dependency>
             <groupId>com.h2database</groupId>

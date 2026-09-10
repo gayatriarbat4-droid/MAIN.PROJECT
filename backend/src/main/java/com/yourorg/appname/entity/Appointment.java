@@ -50,7 +50,7 @@ public class Appointment {
     @Column(name = "primary_reason")
     private String primaryReason;
 
-    @Column(name = "clinical_notes", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "clinical_notes", columnDefinition = "TEXT")
     private String clinicalNotes;
 
     @Column(name = "insurance_provider")

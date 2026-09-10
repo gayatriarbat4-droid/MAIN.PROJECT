@@ -36,7 +36,7 @@ public class MedicalRecord {
     @Column(name = "record_date")
     private String recordDate;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String notes;
 
     @Column(name = "created_at", nullable = false, updatable = false)

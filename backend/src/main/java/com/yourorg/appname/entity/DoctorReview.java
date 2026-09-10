@@ -31,7 +31,7 @@ public class DoctorReview {
     @Column(name = "review_date", length = 50)
     private String reviewDate;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String comment;
 
     @Column(name = "created_at", nullable = false, updatable = false)

@@ -25,7 +25,7 @@ public class Hospital {
 
     private String tagline;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @Column(nullable = false)
