@@ -17,6 +17,7 @@ com\yourorg\appname\repository\EmergencyRequestRepository.class
 com\yourorg\appname\repository\DoctorScheduleRepository.class
 com\yourorg\appname\dto\request\RescheduleRequest$RescheduleRequestBuilder.class
 com\yourorg\appname\controller\AppointmentController.class
+com\yourorg\appname\controller\HealthController.class
 com\yourorg\appname\service\impl\EmergencyServiceImpl.class
 com\yourorg\appname\entity\Doctor$DoctorBuilder.class
 com\yourorg\appname\dto\request\VerifyEmailRequest$VerifyEmailRequestBuilder.class
