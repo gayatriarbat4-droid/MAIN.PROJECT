@@ -67,7 +67,7 @@ public class DataInitializer implements CommandLineRunner {
             });
         });
 
-        // Ensure narkhade and mansinarkhade always exist with verified status
+        // Ensure narkhade, mansinarkhade, dr_collins, admin_sarah, and arbat always exist with verified status
         if (!userRepository.existsByUsername("narkhade")) {
             userRepository.save(User.builder()
                     .username("narkhade")
@@ -85,6 +85,39 @@ public class DataInitializer implements CommandLineRunner {
                     .email("manshi12345@gmail.com")
                     .passwordHash(passwordEncoder.encode("Password123!"))
                     .fullName("Mansi Narkhade")
+                    .phone("9373188800")
+                    .role("ROLE_PATIENT")
+                    .emailVerified(true)
+                    .build());
+        }
+        if (!userRepository.existsByUsername("dr_collins")) {
+            userRepository.save(User.builder()
+                    .username("dr_collins")
+                    .email("dr.collins@medicare.health")
+                    .passwordHash(passwordEncoder.encode("Password123!"))
+                    .fullName("Dr. Michael Collins")
+                    .phone("+1 (800) 555-0199")
+                    .role("ROLE_DOCTOR")
+                    .emailVerified(true)
+                    .build());
+        }
+        if (!userRepository.existsByUsername("admin_sarah")) {
+            userRepository.save(User.builder()
+                    .username("admin_sarah")
+                    .email("admin.sarah@medicare.health")
+                    .passwordHash(passwordEncoder.encode("Password123!"))
+                    .fullName("Sarah Wilson (Admin)")
+                    .phone("+1 (800) 555-0100")
+                    .role("ROLE_ADMIN")
+                    .emailVerified(true)
+                    .build());
+        }
+        if (!userRepository.existsByUsername("arbat")) {
+            userRepository.save(User.builder()
+                    .username("arbat")
+                    .email("gayatri12345@gmail.com")
+                    .passwordHash(passwordEncoder.encode("gayatri28"))
+                    .fullName("Gayatri Arbat")
                     .phone("9373188800")
                     .role("ROLE_PATIENT")
                     .emailVerified(true)
