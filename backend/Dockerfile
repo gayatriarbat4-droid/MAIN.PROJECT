@@ -1,4 +1,4 @@
-﻿# ==========================================================
+# ==========================================================
 # Stage 1: Build JAR with Maven & Eclipse Temurin JDK 17
 # ==========================================================
 FROM maven:3.9.6-eclipse-temurin-17-alpine AS builder
@@ -34,10 +34,5 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Run Spring Boot with cloud-optimized JVM flags and dynamic port binding
-ENTRYPOINT ["java", \
-    "-XX:+UseContainerSupport", \
-    "-XX:MaxRAMPercentage=75.0", \
-    "-Djava.security.egd=file:/dev/./urandom", \
-    "-Dserver.port=${PORT}", \
-    "-jar", \
-    "app.jar"]
+ENTRYPOINT ["sh", "-c", "java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom -jar app.jar --server.port=${PORT:-8080}"]
+
